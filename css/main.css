@@ -1,0 +1,47 @@
+@charset "utr-8";
+
+/* ------------------
+setup
+------------------- */
+html{
+    height: 100%;
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    text-align: left;
+    color: #222;
+    background: ;
+    font-size: 100%;
+    font-weight: 400;
+    letter-spacing: 1.6;
+}
+a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: ;
+    transform-origin: center top;
+    transition: transform.3s;
+}
+a:hover{
+    border-bottom-color: transparent;
+    transform: translate(0.1875em);
+    text-decoration: underline;
+}
+/* -----------------
+header
+------------------- */
+header {
+	position: relative;
+	height: 100%;
+	/* width: 100vh; */
+}
